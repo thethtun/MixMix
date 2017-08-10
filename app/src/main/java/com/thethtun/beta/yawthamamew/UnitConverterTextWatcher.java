@@ -22,6 +22,27 @@ public class UnitConverterTextWatcher implements TextWatcher {
     @BindView(R.id.row2_unit_editText)
     EditText row2_unit_editText;
 
+    @BindView(R.id.row3_unit_editText)
+    EditText row3_unit_editText;
+
+    @BindView(R.id.row4_unit_editText)
+    EditText row4_unit_editText;
+
+    @BindView(R.id.row5_unit_editText)
+    EditText row5_unit_editText;
+
+    @BindView(R.id.row6_unit_editText)
+    EditText row6_unit_editText;
+
+    @BindView(R.id.row7_unit_editText)
+    EditText row7_unit_editText;
+
+    @BindView(R.id.row8_unit_editText)
+    EditText row8_unit_editText;
+
+    @BindView(R.id.row9_unit_editText)
+    EditText row9_unit_editText;
+
     private EditText editText;
 
     public UnitConverterTextWatcher(EditText editText, View rootView) {
@@ -56,6 +77,28 @@ public class UnitConverterTextWatcher implements TextWatcher {
                         if(!row2_unit_editText.getText().toString().equals(String.valueOf(input)) ){
                             row2_unit_editText.setText(String.valueOf(input / 3));
                         }
+                        if(!row3_unit_editText.getText().toString().equals(String.valueOf(input)) ){
+                            row3_unit_editText.setText(String.valueOf(input / 3));
+                        }
+                        if(!row4_unit_editText.getText().toString().equals(String.valueOf(input)) ){
+                            row4_unit_editText.setText(String.valueOf(input / 3));
+                        }
+                        if(!row5_unit_editText.getText().toString().equals(String.valueOf(input)) ){
+                            row5_unit_editText.setText(String.valueOf(input / 3));
+                        }
+                        if(!row6_unit_editText.getText().toString().equals(String.valueOf(input)) ){
+                            row6_unit_editText.setText(String.valueOf(input / 3));
+                        }
+                        if(!row7_unit_editText.getText().toString().equals(String.valueOf(input)) ){
+                            row7_unit_editText.setText(String.valueOf(input / 3));
+                        }
+                        if(!row8_unit_editText.getText().toString().equals(String.valueOf(input)) ){
+                            row8_unit_editText.setText(String.valueOf(input / 3));
+                        }
+                        if(!row9_unit_editText.getText().toString().equals(String.valueOf(input)) ){
+                            row9_unit_editText.setText(String.valueOf(input / 3));
+                        }
+
                     }
 
                     if(editText.equals(row2_unit_editText)){

@@ -14,6 +14,12 @@
     <string name="kilometer_abbrv">km</string>
     <string name="feet_abbrv">ft</string>
     <string name="yard_abbrv">yd</string>
+    <string name="decimeter_abbrv">dm</string>
+    <string name="meter_abbrv">m</string>
+    <string name="inch_abbrv">inch</string>
+    <string name="ft_in_abbrv">ft in</string>
+    <string name="mile_abbrv">mile</string>
+    <string name="nautical_mile">NM</string>
 
     <string name="dummy_content_description">This is an image.</string>
     <string name="input_editText_dialogBox">Enter value</string>

@@ -34,11 +34,53 @@ public class LengthAreaWeightVolumeFragment extends Fragment {
     @BindView(R.id.row2_unit_text)
     TextView row2_unit_text;
 
+    @BindView(R.id.row3_unit_text)
+    TextView row3_unit_text;
+
+    @BindView(R.id.row4_unit_text)
+    TextView row4_unit_text;
+
+    @BindView(R.id.row5_unit_text)
+    TextView row5_unit_text;
+
+    @BindView(R.id.row6_unit_text)
+    TextView row6_unit_text;
+
+    @BindView(R.id.row7_unit_text)
+    TextView row7_unit_text;
+
+    @BindView(R.id.row8_unit_text)
+    TextView row8_unit_text;
+
+    @BindView(R.id.row9_unit_text)
+    TextView row9_unit_text;
+
     @BindView(R.id.row1_unit_editText)
     EditText row1_unit_editText;
 
     @BindView(R.id.row2_unit_editText)
     EditText row2_unit_editText;
+
+    @BindView(R.id.row3_unit_editText)
+    EditText row3_unit_editText;
+
+    @BindView(R.id.row4_unit_editText)
+    EditText row4_unit_editText;
+
+    @BindView(R.id.row5_unit_editText)
+    EditText row5_unit_editText;
+
+    @BindView(R.id.row6_unit_editText)
+    EditText row6_unit_editText;
+
+    @BindView(R.id.row7_unit_editText)
+    EditText row7_unit_editText;
+
+    @BindView(R.id.row8_unit_editText)
+    EditText row8_unit_editText;
+
+    @BindView(R.id.row9_unit_editText)
+    EditText row9_unit_editText;
 
     private View rootView;
     private String userInput;
@@ -53,15 +95,28 @@ public class LengthAreaWeightVolumeFragment extends Fragment {
         // Inflate the layout for this fragment
         rootView = inflater.inflate(R.layout.fragment_length_area_weight_volume, container, false);
         ButterKnife.bind(this, rootView);
-        row1_unit_text.setText(R.string.feet_abbrv);
-        focusChangedListener(row1_unit_editText);
-        row2_unit_text.setText(R.string.yard_abbrv);
-        focusChangedListener(row2_unit_editText);
-//        editTextChangedListener(row2_unit_editText);
+        setListenerForEachRow(row1_unit_editText, R.string.decimeter_abbrv, row1_unit_text);
+        setListenerForEachRow(row2_unit_editText, R.string.meter_abbrv, row2_unit_text);
+        setListenerForEachRow(row3_unit_editText, R.string.inch_abbrv, row3_unit_text);
+        setListenerForEachRow(row4_unit_editText, R.string.feet_abbrv, row4_unit_text);
+        setListenerForEachRow(row5_unit_editText, R.string.ft_in_abbrv, row5_unit_text);
+        setListenerForEachRow(row6_unit_editText, R.string.yard_abbrv, row6_unit_text);
+        setListenerForEachRow(row7_unit_editText, R.string.mile_abbrv, row7_unit_text);
+        setListenerForEachRow(row8_unit_editText, R.string.kilometer_abbrv, row8_unit_text);
+        setListenerForEachRow(row9_unit_editText, R.string.nautical_mile, row9_unit_text);
         return rootView;
     }
 
-    public void focusChangedListener(final EditText editText){
+    public void editTextOnClickListener(final EditText editText){
+        editText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                summonInputDialogBox(editText);
+            }
+        });
+    }
+
+    public void editTextOnFocusChangedListener(final EditText editText){
         editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean hasFocus) {
@@ -89,17 +144,13 @@ public class LengthAreaWeightVolumeFragment extends Fragment {
     }
 
     private void summonInputDialogBox(final EditText editTextRow){
-
 //        final EditText editText = new EditText(getContext());
 //        editText.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL);
         AlertDialog.Builder builder1 = new AlertDialog.Builder(getContext());
 //        builder1.setMessage("Enter your damn shit");
 //        builder1.setView(editText);
         builder1.setView(R.layout.fragment_input_dialog_box);
-        final View view = getActivity().getLayoutInflater().inflate(R.layout.fragment_input_dialog_box,null);
         builder1.setCancelable(true);
-
-
 
         builder1.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
@@ -126,6 +177,12 @@ public class LengthAreaWeightVolumeFragment extends Fragment {
         AlertDialog alert11 = builder1.create();
         alert11.show();
 
+    }
+
+    public void setListenerForEachRow(EditText editText, int description, TextView textView){
+        textView.setText(description);
+        editTextOnFocusChangedListener(editText);
+        editTextOnClickListener(editText);
     }
 
 }
