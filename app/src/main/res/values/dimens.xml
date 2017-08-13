@@ -8,4 +8,10 @@
 
     <dimen name="editText_width">120dp</dimen>
     <dimen name="between_editText_and_text">10dp</dimen>
+    <dimen name="linearLayout_width_for_calculatingLength">180dp</dimen>
+    <dimen name="marginTop_for_main_linearLayout">10dp</dimen>
+    <dimen name="marginLeft_for_main_linearLayout">10dp</dimen>
+    <dimen name="marginRight_for_main_linearLayout">10dp</dimen>
+    <dimen name="marginBottom_for_main_linearLayout">10dp</dimen>
+    <dimen name="margin_for_main_linearLayout">10dp</dimen>
 </resources>

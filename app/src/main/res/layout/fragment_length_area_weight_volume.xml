@@ -6,7 +6,7 @@
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true" >
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- TODO: Update blank fragment_length_area_weight_volume layout -->
     <LinearLayout
         android:id="@+id/unit_type_choosing_button"
         android:layout_width="match_parent"
@@ -66,237 +66,345 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
         android:layout_below="@id/unit_type_choosing_button">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_for_main_linearLayout"
+            android:layout_marginLeft="@dimen/marginLeft_for_main_linearLayout"
+            android:layout_marginRight="@dimen/marginRight_for_main_linearLayout"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row1_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content" />
                 <TextView
                     android:id="@+id/row1_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row1_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row2_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row2_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row2_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row3_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row3_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row3_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row4_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row4_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row4_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row5_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row5_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row5_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row6_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row6_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row6_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row7_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row7_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row7_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row8_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row8_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row8_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row9_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row9_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row9_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row10_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row10_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row10_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row11_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row11_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row11_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row12_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row12_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row12_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row13_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row13_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row13_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/row14_unit_editText"
-                    android:layout_width="@dimen/editText_width"
-                    android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/row14_unit_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/between_editText_and_text"
-                    android:text="@string/kilometer_abbrv"/>
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row14_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/row15_unit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row15_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/row16_unit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row16_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/row17_unit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row17_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/row18_unit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row18_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/row19_unit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row19_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/row20_unit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/kilometer"/>
+                <EditText
+                    android:id="@+id/row20_unit_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>

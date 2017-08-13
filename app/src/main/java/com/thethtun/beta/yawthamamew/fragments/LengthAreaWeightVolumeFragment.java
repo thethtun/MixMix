@@ -27,7 +27,7 @@ public class LengthAreaWeightVolumeFragment extends Fragment {
 
     private static final String TAG = LengthAreaWeightVolumeFragment.class.getSimpleName();
 
-
+    //TextViews
     @BindView(R.id.row1_unit_text)
     TextView row1_unit_text;
 
@@ -55,6 +55,40 @@ public class LengthAreaWeightVolumeFragment extends Fragment {
     @BindView(R.id.row9_unit_text)
     TextView row9_unit_text;
 
+    @BindView(R.id.row10_unit_text)
+    TextView row10_unit_text;
+
+    @BindView(R.id.row11_unit_text)
+    TextView row11_unit_text;
+
+    @BindView(R.id.row12_unit_text)
+    TextView row12_unit_text;
+
+    @BindView(R.id.row13_unit_text)
+    TextView row13_unit_text;
+
+    @BindView(R.id.row14_unit_text)
+    TextView row14_unit_text;
+
+    @BindView(R.id.row15_unit_text)
+    TextView row15_unit_text;
+
+    @BindView(R.id.row16_unit_text)
+    TextView row16_unit_text;
+
+    @BindView(R.id.row17_unit_text)
+    TextView row17_unit_text;
+
+    @BindView(R.id.row18_unit_text)
+    TextView row18_unit_text;
+
+    @BindView(R.id.row19_unit_text)
+    TextView row19_unit_text;
+
+    @BindView(R.id.row20_unit_text)
+    TextView row20_unit_text;
+
+    //EditText View
     @BindView(R.id.row1_unit_editText)
     EditText row1_unit_editText;
 
@@ -82,6 +116,39 @@ public class LengthAreaWeightVolumeFragment extends Fragment {
     @BindView(R.id.row9_unit_editText)
     EditText row9_unit_editText;
 
+    @BindView(R.id.row10_unit_editText)
+    EditText row10_unit_editText;
+
+    @BindView(R.id.row11_unit_editText)
+    EditText row11_unit_editText;
+
+    @BindView(R.id.row12_unit_editText)
+    EditText row12_unit_editText;
+
+    @BindView(R.id.row13_unit_editText)
+    EditText row13_unit_editText;
+
+    @BindView(R.id.row14_unit_editText)
+    EditText row14_unit_editText;
+
+    @BindView(R.id.row15_unit_editText)
+    EditText row15_unit_editText;
+
+    @BindView(R.id.row16_unit_editText)
+    EditText row16_unit_editText;
+
+    @BindView(R.id.row17_unit_editText)
+    EditText row17_unit_editText;
+
+    @BindView(R.id.row18_unit_editText)
+    EditText row18_unit_editText;
+
+    @BindView(R.id.row19_unit_editText)
+    EditText row19_unit_editText;
+
+    @BindView(R.id.row20_unit_editText)
+    EditText row20_unit_editText;
+
     private View rootView;
     private String userInput;
 
@@ -92,18 +159,38 @@ public class LengthAreaWeightVolumeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment_length_area_weight_volume
         rootView = inflater.inflate(R.layout.fragment_length_area_weight_volume, container, false);
         ButterKnife.bind(this, rootView);
-        setListenerForEachRow(row1_unit_editText, R.string.decimeter_abbrv, row1_unit_text);
-        setListenerForEachRow(row2_unit_editText, R.string.meter_abbrv, row2_unit_text);
-        setListenerForEachRow(row3_unit_editText, R.string.inch_abbrv, row3_unit_text);
-        setListenerForEachRow(row4_unit_editText, R.string.feet_abbrv, row4_unit_text);
-        setListenerForEachRow(row5_unit_editText, R.string.ft_in_abbrv, row5_unit_text);
-        setListenerForEachRow(row6_unit_editText, R.string.yard_abbrv, row6_unit_text);
-        setListenerForEachRow(row7_unit_editText, R.string.mile_abbrv, row7_unit_text);
-        setListenerForEachRow(row8_unit_editText, R.string.kilometer_abbrv, row8_unit_text);
-        setListenerForEachRow(row9_unit_editText, R.string.nautical_mile, row9_unit_text);
+        setListenerForEachRow(row1_unit_editText, R.string.micrometer, row1_unit_text);
+        setListenerForEachRow(row2_unit_editText, R.string.millimeter, row2_unit_text);
+        setListenerForEachRow(row3_unit_editText, R.string.centimeter, row3_unit_text);
+        setListenerForEachRow(row4_unit_editText, R.string.decimeter, row4_unit_text);
+        setListenerForEachRow(row5_unit_editText, R.string.meter, row5_unit_text);
+        setListenerForEachRow(row6_unit_editText, R.string.inch, row6_unit_text);
+        setListenerForEachRow(row7_unit_editText, R.string.feet, row7_unit_text);
+        setListenerForEachRow(row8_unit_editText, R.string.ft_in, row8_unit_text);
+        setListenerForEachRow(row9_unit_editText, R.string.yard, row9_unit_text);
+        setListenerForEachRow(row10_unit_editText, R.string.mile, row10_unit_text);
+        setListenerForEachRow(row11_unit_editText, R.string.kilometer, row11_unit_text);
+        setListenerForEachRow(row12_unit_editText, R.string.nautical_mile, row12_unit_text);
+        row13_unit_editText.setVisibility(View.GONE);
+        row14_unit_editText.setVisibility(View.GONE);
+        row15_unit_editText.setVisibility(View.GONE);
+        row16_unit_editText.setVisibility(View.GONE);
+        row17_unit_editText.setVisibility(View.GONE);
+        row18_unit_editText.setVisibility(View.GONE);
+        row19_unit_editText.setVisibility(View.GONE);
+        row20_unit_editText.setVisibility(View.GONE);
+
+        row13_unit_text.setVisibility(View.GONE);
+        row14_unit_text.setVisibility(View.GONE);
+        row15_unit_text.setVisibility(View.GONE);
+        row16_unit_text.setVisibility(View.GONE);
+        row17_unit_text.setVisibility(View.GONE);
+        row18_unit_text.setVisibility(View.GONE);
+        row19_unit_text.setVisibility(View.GONE);
+        row20_unit_text.setVisibility(View.GONE);
         return rootView;
     }
 
@@ -116,31 +203,31 @@ public class LengthAreaWeightVolumeFragment extends Fragment {
         });
     }
 
-    public void editTextOnFocusChangedListener(final EditText editText){
+    public void editTextOnFocusChangedListener(final EditText editText, final TextView textView){
         editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean hasFocus) {
                 if(hasFocus){
 //                    Toast.makeText(getContext(), "Focus On", Toast.LENGTH_SHORT).show();
-                    addEditTextChangedListener(editText);
+                    addEditTextChangedListener(editText, textView);
 //                    InputDialogBoxFragment dialogBoxFragment = new InputDialogBoxFragment();
 //                    dialogBoxFragment.show(getChildFragmentManager(), "Just a string");
                     summonInputDialogBox(editText);
 
                 }else{
                     Toast.makeText(getContext(), "Focus Off", Toast.LENGTH_SHORT).show();
-                    removeEditTextChangedListener(editText);
+                    removeEditTextChangedListener(editText,textView);
                 }
             }
         });
     }
 
-    public void addEditTextChangedListener(final EditText editText){
-        editText.addTextChangedListener(new UnitConverterTextWatcher(editText, rootView));
+    public void addEditTextChangedListener(final EditText editText, TextView textView){
+        editText.addTextChangedListener(new UnitConverterTextWatcher(editText, rootView, textView, getContext()));
     }
 
-    public void removeEditTextChangedListener(final EditText editText){
-        editText.removeTextChangedListener(new UnitConverterTextWatcher(editText, rootView));
+    public void removeEditTextChangedListener(final EditText editText, TextView textView){
+        editText.removeTextChangedListener(new UnitConverterTextWatcher(editText, rootView, textView,getContext()));
     }
 
     private void summonInputDialogBox(final EditText editTextRow){
@@ -181,7 +268,7 @@ public class LengthAreaWeightVolumeFragment extends Fragment {
 
     public void setListenerForEachRow(EditText editText, int description, TextView textView){
         textView.setText(description);
-        editTextOnFocusChangedListener(editText);
+        editTextOnFocusChangedListener(editText, textView);
         editTextOnClickListener(editText);
     }
 

@@ -84,13 +84,12 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
         if (id == R.id.nav_camera) {
             // Handle the camera action
 //            FragmentManager fragmentManager = getSupportFragmentManager();
 //            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//            UnitConverterFragment fragment = new UnitConverterFragment();
-//            fragmentTransaction.add(R.id.fragment_container, fragment);
+//            UnitConverterFragment fragment_length_area_weight_volume = new UnitConverterFragment();
+//            fragmentTransaction.add(R.id.fragment_container, fragment_length_area_weight_volume);
 //            fragmentTransaction.commit();
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fragment_container, new UnitConverterFragment()).commit();

@@ -11,15 +11,31 @@
     Hello blank fragment Hello blank fragment Hello blank ############# fragment Hello blank fragment Hello blank fragment Hello blank fragment Hello blank fragment Hello blank fragment Hello blank fragment Hello blank fragment Hello blank fragment Hello blank fragment </string>
 
     <!--Length Units-->
-    <string name="kilometer_abbrv">km</string>
-    <string name="feet_abbrv">ft</string>
-    <string name="yard_abbrv">yd</string>
+    <string name="micrometer_abbrv">\u00B5m</string>
+    <string name="millimeter_abbrv">mm</string>
+    <string name="centimeter_abbrv">cm</string>
     <string name="decimeter_abbrv">dm</string>
     <string name="meter_abbrv">m</string>
-    <string name="inch_abbrv">inch</string>
+    <string name="feet_abbrv">ft</string>
     <string name="ft_in_abbrv">ft in</string>
+    <string name="yard_abbrv">yd</string>
+    <string name="inch_abbrv">inch</string>
     <string name="mile_abbrv">mile</string>
-    <string name="nautical_mile">NM</string>
+    <string name="kilometer_abbrv">km</string>
+    <string name="nautical_mile_abbrv">NM</string>
+
+    <string name="micrometer">Micrometer</string>
+    <string name="millimeter">Millimeter</string>
+    <string name="centimeter">Centimeter</string>
+    <string name="decimeter">Decimeter</string>
+    <string name="meter">Meter</string>
+    <string name="feet">Foot</string>
+    <string name="ft_in">ft in</string>
+    <string name="yard">Yard</string>
+    <string name="inch">Inch</string>
+    <string name="mile">Mile</string>
+    <string name="kilometer">Kilometer</string>
+    <string name="nautical_mile">Nautical Mile</string>
 
     <string name="dummy_content_description">This is an image.</string>
     <string name="input_editText_dialogBox">Enter value</string>
